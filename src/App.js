@@ -34,7 +34,7 @@ let arr =[50,"mitul",40,30,20,10];
   //  let res =Array.isArray(arr);        // Cheack Given element is array or not
 
 
-   console.log(res);
+  //  console.log(res);
 
 //  console.log(arr);
 

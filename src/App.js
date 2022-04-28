@@ -3,66 +3,42 @@ import './App.css';
 
 function App() {
 
+let arr =[50,"mitul",40,30,20,10];
+// console.log(arr[2]);
 
-  // var is not block scope
-  // let and const is block scope
+// let obj = {
+//   id : 20,
+//   per : 10,
+//   age : 19
+// }
+// console.log(obj.per);  // OR console.log(obj["per"]);
 
+//  arr.push(58);             // push use is Add element at last
 
+// arr.unshift(58);           // unshift use is Add element at First
 
-  // let a=5;
-  // {
-  //   let a=10;
-  // }
-  // console.log(a);
+//  arr.pop();           // Pop use is Remove element at last
 
+  // arr.shift();           // shift use is Remove element at First
 
+  // arr.splice(2 , 0 , 23);           // splice use is Add element at specific Position
 
-  // const b=10;    // globle scope
-  // {
-  //   const b=15;    // local scope
-  // }
-  // console.log(b);
+  // arr.splice(2 , 2);           // splice use is Remove 2nd index element
 
+  // console.log(arr.toString());        // toString use is Convert array to string
 
+  //  let res = arr.some((a) => a > 60);        // Cheack Within Array Return true/False
 
-  // let y=12;
-  // y=y+3;
-  // console.log(y);
+  //  let res = arr.find((a) => a > 40);        // Cheack Within Array Return First Match element
 
-
-// Const value can not be re-declared
-
-  // const x=12;       // Error
-  // x=x+3;
-  // console.log(x);
+  //  let res =Array.isArray(arr);        // Cheack Given element is array or not
 
 
-  // let c;
-  // c=20;
-  // console.log(c);
+   console.log(res);
+
+//  console.log(arr);
 
 
-// Const value is compulesorry declared
-  // const d;         //Error
-  // d=25;
-  // console.log(d);
-
-  // ARROW FUNCTION
-
-  // let arr =[50,40,30,20,10];
-  // arr.map((a , i) => console.log(a));
-
-
-  // function intro(){        // Normal Function
-  
-  // }
-
-
-  let intro =() =>(
-    console.log("Mtul beladiya")
-  
-  )
-  intro();
 
 
 

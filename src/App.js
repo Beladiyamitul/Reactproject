@@ -38,7 +38,7 @@ let arr =[50,"mitul",40,30,20,10];
 
 //  console.log(arr);
 
-//  console.log(dcr);
+
 
 
 

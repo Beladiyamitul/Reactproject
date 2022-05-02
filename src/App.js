@@ -4,7 +4,7 @@ import './App.css';
 function App() {
 
 
-  let Medicine  = [
+  const Medicine  = [
     { 
       id: 101,
       name: 'Abacavir',
@@ -48,13 +48,21 @@ function App() {
    
   ];
 
-  console.log(Medicine.map((i) => {return i}));  // MAP
 
-  console.log(Medicine.filter((g) => {return g.expiry >=2022})); // FILTER
+  
+  // Medicine.map((value , index) => console.log(value.id , value.name , value.price , value.expiry ));  // MAP
 
-  // console.log(Medicine.);
+    let filterdata = Medicine.filter ((d , i) => d.expiry >= 2022);      // FILTER
+  console.log(filterdata);
+
+  // let ans = filterdata.reduce((acc,d,i) => acc+d.price,0);     // REDUCE
+  // console.log(ans);
 
 
+  
+  // let filterdata = Medicine.filter ((d , i) => d.expiry >= 2022)
+  // .reduce((acc,d,i) => acc+d.price,0);      // FILTER + REDUCE
+  // console.log(filterdata);
 
 
 
@@ -63,22 +71,37 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <table>
+          <th>
+            <td>Id</td>
+            <td>name</td>
+            <td>price</td>
+            <td>expiry</td>
+          </th>
+            {
+
+            filterdata.map((value , index) => {
+                  return (
+                      
+                     
+                      <tr>
+                        <td>{value.id}</td>
+                        <td>{value.name}</td>
+                        <td>{value.price}</td>
+                        <td>{value.expiry}</td>
+                      
+                      </tr>
+                 
+                        
+                  
+                    
+                      )
+                    })
+               
+            }
+      </table> 
+    </>
   );
 }
 

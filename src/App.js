@@ -55,8 +55,8 @@ function App() {
     let filterdata = Medicine.filter ((d , i) => d.expiry >= 2022);      // FILTER
   console.log(filterdata);
 
-  // let ans = filterdata.reduce((acc,d,i) => acc+d.price,0);     // REDUCE
-  // console.log(ans);
+  let ans = filterdata.reduce((acc,d,i) => acc+d.price,0);     // REDUCE
+  console.log(ans);
 
 
   

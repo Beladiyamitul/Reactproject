@@ -45,19 +45,19 @@ function App() {
 
 
   
-  // Employee.map((value , index) => console.log(value.name , value.age , value.salary , value.status ));  // MAP
+  // Employee.map((value , index) => console.log(value.name , value.age , value.salary , value.bonus ));  // MAP
 
-    let filterdata = Employee.filter ((d , i) => d.status >= true);      // FILTER
-  console.log(filterdata);
+  //   let filterdata = Employee.filter ((d , i) => d.status >= true);      // FILTER
+  // console.log(filterdata);
 
-  let ans = filterdata.reduce((acc,d,i) => acc+d.bonus+d.salary,0);     // REDUCE
-  console.log(ans);
+  // let ans = filterdata.reduce((acc,d,i) => acc+d.bonus+d.salary,0);     // REDUCE
+  // console.log(ans);
 
 
   
-  // let filterdata = Employee.filter ((d , i) => d.expiry >= 2022)
-  // .reduce((acc,d,i) => acc+d.bonus,0);      // FILTER + REDUCE
-  // console.log(filterdata);
+  let filterdata = Employee.filter ((d , i) => d.status >= true)
+  .reduce((acc,d,i) => acc+d.bonus+d.salary,0);      // FILTER + REDUCE
+  console.log(filterdata);
 
 
 

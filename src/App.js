@@ -77,7 +77,7 @@ function App() {
             <td>Id</td>
             <td>name</td>
             <td>price</td>
-            <td>expiry</td>
+            <td>Total Cost</td>
           </th>
             {
 
@@ -89,7 +89,7 @@ function App() {
                         <td>{value.id}</td>
                         <td>{value.name}</td>
                         <td>{value.price}</td>
-                        <td>{value.expiry}</td>
+                        {index === 0?<td rowspan={Medicine.length}>{ans}</td> : null}
                       
                       </tr>
                  

@@ -72,13 +72,13 @@ function App() {
 
   return (
     <>
-      <table>
-          <th>
-            <td>Id</td>
-            <td>name</td>
-            <td>price</td>
-            <td>Total Cost</td>
-          </th>
+      <table border="1">
+          <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>price</th>
+            <th>Total Cost</th>
+          </tr>
             {
 
             filterdata.map((value , index) => {
@@ -100,7 +100,7 @@ function App() {
                     })
                
             }
-      </table> 
+      </table>  
     </>
   );
 }

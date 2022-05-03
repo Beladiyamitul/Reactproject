@@ -3,104 +3,53 @@ import './App.css';
 
 function App() {
 
-
-  const Medicine  = [
-    { 
-      id: 101,
-      name: 'Abacavir',
-      quantity: 25,
-      price: 150,
-      expiry: 2022,
-      status: true
-    },
-    {
-      id: 102,
-      name: 'Eltrombopag',
-      quantity: 90,
-      price: 550,
-      expiry: 2021,
-      status: true
-    },
-    {
-      id: 103,
-      name: 'Meloxicam',
-      quantity: 85,
-      price: 450,
-      expiry: 2025,
-      status: false
-    },
-    {
-      id: 104,
-      name: 'Allopurinol',
-      quantity: 50,
-      price: 600,
-      expiry: 2023,
-      status: true
-    },
-    {
-      id: 105,
-      name: 'Phenytoin',
-      quantity: 63,
-      price: 250,
-      expiry: 2021,
-      status: false
-    }
-   
-  ];
-
-
+  // Copy , Merge , destructure. In Array
   
-  // Medicine.map((value , index) => console.log(value.id , value.name , value.price , value.expiry ));  // MAP
+  let arr =[10,20,30,40,50];
 
-    let filterdata = Medicine.filter ((d , i) => d.expiry >= 2022);      // FILTER
-  console.log(filterdata);
+  // copy
+  let arr1 =[...arr];
+  console.log(arr1);
 
-  let ans = filterdata.reduce((acc,d,i) => acc+d.price,0);     // REDUCE
-  console.log(ans);
+  // Merge
+  let arr2 =[55,...arr,70];
+  console.log(arr2);
+
+  // destructure
+
+  let [sci , ss ,eng , guj ,hindi ] = arr;
+  console.log(eng);
 
 
+
+
+ // Copy , Merge , destructure. In Object
   
-  // let filterdata = Medicine.filter ((d , i) => d.expiry >= 2022)
-  // .reduce((acc,d,i) => acc+d.price,0);      // FILTER + REDUCE
-  // console.log(filterdata);
+  let obj ={
+    id:102,
+    name:"ajay"
+  };
 
+  // copy
 
+  let obj1 = {...obj};
+  console.log(obj1);
 
-  
+  // Merge
+
+  let obj2 ={...obj, place:"surat"};
+  console.log(obj2);
+
+  // destructure
+
+  let {id,name}=obj;
+  console.log(id,name);
 
 
 
   return (
     <>
-      <table>
-          <th>
-            <td>Id</td>
-            <td>name</td>
-            <td>price</td>
-            <td>Total Cost</td>
-          </th>
-            {
-
-            filterdata.map((value , index) => {
-                  return (
-                      
-                     
-                      <tr>
-                        <td>{value.id}</td>
-                        <td>{value.name}</td>
-                        <td>{value.price}</td>
-                        {index === 0?<td rowspan={Medicine.length}>{ans}</td> : null}
-                      
-                      </tr>
-                 
-                        
-                  
-                    
-                      )
-                    })
-               
-            }
-      </table> 
+  
     </>
   );
 }

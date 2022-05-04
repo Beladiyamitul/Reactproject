@@ -47,17 +47,17 @@ function App() {
   
   // Employee.map((value , index) => console.log(value.name , value.age , value.salary , value.bonus ));  // MAP
 
-  //   let filterdata = Employee.filter ((d , i) => d.status >= true);      // FILTER
-  // console.log(filterdata);
+    let filterdata = Employee.filter ((d , i) => d.status >= true);      // FILTER
+  console.log(filterdata);
 
-  // let ans = filterdata.reduce((acc,d,i) => acc+d.bonus+d.salary,0);     // REDUCE
-  // console.log(ans);
+  let ans = filterdata.reduce((acc,d,i) => acc+d.bonus+d.salary,0);     // REDUCE
+  console.log(ans);
 
 
   
-  let filterdata = Employee.filter ((d , i) => d.status >= true)
-  .reduce((acc,d,i) => acc+d.bonus+d.salary,0);      // FILTER + REDUCE
-  console.log(filterdata);
+  // let filterdata = Employee.filter ((d , i) => d.status >= true)
+  // .reduce((acc,d,i) => acc+d.bonus+d.salary,0);      // FILTER + REDUCE
+  // console.log(filterdata);
 
 
 
@@ -71,6 +71,8 @@ function App() {
           <tr>
             <th>Name</th>
             <th>Age</th>
+            <th>Salary</th>
+            <th>bonus</th>
             <th>Totle Salary</th>
             <th>Total Cost</th>
            
@@ -84,8 +86,10 @@ function App() {
                       <tr>
                         <td>{value.name}</td>
                         <td>{value.age}</td>
+                        <td>{value.salary}</td>
+                        <td>{value.bonus}</td>
                         <td>{value.salary+value.bonus}</td>
-                        {index === 0?<td rowspan={Employee.length}>{ans}</td> : null}
+                      {index === 0?<td rowspan={Employee.length}>{ans}</td> : null}
                       
                       </tr>
                  

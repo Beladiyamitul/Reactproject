@@ -6,8 +6,6 @@ import City from './containers/contry/city';
 function App() {
 
 
-
-
   return (
       <>
         <Contry/>

@@ -7,6 +7,7 @@ class City extends Component {
         
         this.state ={
             city : 'surat'
+            
         }
     }
 
@@ -23,6 +24,7 @@ class City extends Component {
            
            <>
            <div>City:{this.state.city}</div>
+           <p>CITYNAME:{this.props.cityname}</p>
            <button onClick={() => this.changecity()}>Change City</button>
            
            </>

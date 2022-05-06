@@ -4,6 +4,7 @@ import Contry from './containers/contry/contry';
 import City from './containers/contry/city';
 import Contryfun from './containers/contry/Contryfun';
 import Cityfun from './containers/contry/Cityfun';
+import Con_city_change from './containers/contry/Con_city_change';
 
 function App() {
 
@@ -21,9 +22,11 @@ function App() {
         <h2>Function Base  Components</h2> 
         
 
-      <Contryfun gdpval={7.5}/>
+      <Contryfun />
       <br/><br/>
       <Cityfun/>
+
+      <Con_city_change/>
 
       </>
   );

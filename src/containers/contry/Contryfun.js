@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react';
 
-function Contryfun(gdpval) {
+function Contryfun(props) {
 
     const [contryname , setContry] = useState('Russia');
     const [PM , setPM] = useState('Mikhail Mishustin');
@@ -22,11 +22,15 @@ function Contryfun(gdpval) {
         <button onClick={() => Contrychange()}>Change Contry</button>
 
         <p>GDP : {gdp}</p>
-        <button onClick={() => setGdp(gdpval)}>Change Gdp</button>
+        <button onClick={() => setGdp(4.5)}>Change Gdp</button>
        
        
        </>
     );
+
+
+
+
 }
 
 export default Contryfun;

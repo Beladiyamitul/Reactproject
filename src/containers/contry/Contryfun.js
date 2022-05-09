@@ -2,8 +2,11 @@
 // rsf
 
 import React, { useState } from 'react';
+import Con_city_change from './Con_city_change';
+// import from '';
 
-function Contryfun(props) {
+
+function Contryfun({gdpval}) {
 
     const [contryname , setContry] = useState('Russia');
     const [PM , setPM] = useState('Mikhail Mishustin');
@@ -22,8 +25,9 @@ function Contryfun(props) {
         <button onClick={() => Contrychange()}>Change Contry</button>
 
         <p>GDP : {gdp}</p>
-        <button onClick={() => setGdp(4.5)}>Change Gdp</button>
+        <button onClick={() => setGdp(gdpval)}>Change Gdp</button>
        
+       <Con_city_change famplace={contryname}/>
        
        </>
     );

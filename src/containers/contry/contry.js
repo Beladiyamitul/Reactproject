@@ -31,7 +31,7 @@ class Contry extends Component {
              </div>
              <p>GDP: {this.props.gdpval}</p>
              <button onClick={() => this.changecontry()}>Change Contry</button>
-           dfg
+           
            </>
         );
     }

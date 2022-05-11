@@ -6,6 +6,7 @@ import Contryfun from './containers/contry/Contryfun';
 import Cityfun from './containers/contry/Cityfun';
 import Con_city_change from './containers/contry/Con_city_change';
 import Branch from './containers/contry/Branch';
+import Time from './containers/Time/Time';
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
       <Cityfun/> */}
 
       <Branch/>
+
+      <Time/>
 
      
 

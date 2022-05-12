@@ -7,6 +7,7 @@ import Cityfun from './containers/contry/Cityfun';
 import Con_city_change from './containers/contry/Con_city_change';
 import Branch from './containers/contry/Branch';
 import Time from './containers/Time/Time';
+import TimeFun from './containers/Time/TimeFun';
 
 function App() {
 
@@ -30,7 +31,13 @@ function App() {
 
       <Branch/>
 
+      <h2>Class Base Life Cycle</h2> 
+
       <Time/>
+
+      <h2> Function Base Life Cycle</h2> 
+
+      <TimeFun/>
 
      
 

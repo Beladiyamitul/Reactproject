@@ -23,8 +23,8 @@ function App() {
   const [Data , setData] = useState([]);
 
   let orgData = [
-    {id:101,name:"harsh"},
-    {id:102,name:"nevil"}
+    {id:101,name:"Vikas"},
+    {id:102,name:"Aashish"}
   ]
   useEffect(
     () => {

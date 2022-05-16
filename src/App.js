@@ -11,6 +11,7 @@ import TimeFun from './containers/Time/TimeFun';
 import { useEffect, useState } from 'react';
 import Loading from './components/Loading/Loading';
 import Home from './containers/Home/Home';
+import Count from './containers/Count';
 
 
 
@@ -45,7 +46,7 @@ function App() {
         data={Data}
       />
 
-     
+      <Count/> 
 
       </>
   );

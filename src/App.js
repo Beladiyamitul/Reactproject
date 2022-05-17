@@ -45,6 +45,9 @@ function App() {
         data={Data}
       />
 
+
+      <Time/>
+      <TimeFun/>
  
 
       </>
